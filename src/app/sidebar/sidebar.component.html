@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <div class="avatar animate__animated animate__fadeInUp">
+    <img src="../../../assets/avatar.jpg" class="img-avatar" alt="" />
+  </div>
+  <div class="pre-title animate__animated animate__fadeInUp">
+    Hola, soy Adrián
+  </div>
+  <br />
+  <h2 #asTitle class="subtitle animate__animated animate__fadeInUp"></h2>
+
+  <br />
+  <p class="animate__animated animate__fadeInUp">
+    El camino que seguí para formarme en los distintos conocimientos, fue a raíz
+    de un curso de diseño web, en donde despertó la pasión por la tecnología.
+    Actualmente, me encuentro cursando la carrera en programación.
+  </p>
+  <br />
+
+  <p class="animate__animated animate__fadeInUp">
+    <strong>
+      He realizado distintos proyectos, utilizando HTML, CSS, JavaScript,
+      Angular.
+    </strong>
+  </p>
+  <br />
+  <p class="animate__animated animate__fadeInUp">
+    <strong>
+      También tengo conocimientos en tecnologías de back-end como, Node.js,
+      Express, MongoDB.
+    </strong>
+  </p>
+  <br />
+
+  <p class="animate__animated animate__fadeInUp">
+    Me gustaría formar parte de una empresa que me permita continuar aprendiendo
+    y la posibilidad de cooperar con el entorno de trabajo.
+  </p>
+
+  <div class="link-wrapper animate__animated animate__fadeInUp">
+    <div class="links d-flex col-12 col-lg-1">
+      <div class="block" *ngFor="let linkObj of links">
+        <a [href]="linkObj.link" target="_blank">
+          <div class="block-in">
+            <span [innerHTML]="linkObj.icon"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

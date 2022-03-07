@@ -1,0 +1,10 @@
+<div class="d-flex flex-wrap">
+  <app-sidebar class="col-12 col-sm-12 col-md-6 col-lg-4"></app-sidebar>
+  <div
+    class="wrapper col-12 col-sm-12 col-md-6 col-lg-8"
+    [perfectScrollbar]="config"
+  >
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </div>
+</div>

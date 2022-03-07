@@ -1,0 +1,88 @@
+.block-projects {
+  height: 7rem;
+
+  display: block;
+  padding: 0.3rem;
+  margin: 0.8rem auto;
+}
+
+.block-projects-in {
+  background-color: rgba(240, 236, 236, 0.445);
+  width: 100%;
+  height: 100%;
+}
+
+.block-projects-in:hover {
+  box-shadow: 0 0 5px #3c3c3c6b;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.img-project {
+  /* background-color: aqua; */
+  height: 12rem;
+  padding: 0.5rem;
+}
+
+.description-img {
+  /* background-color: violet; */
+
+  height: 5rem;
+  padding: 0.2rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  width: 50%;
+  height: 0.9rem;
+  background-color: antiquewhite;
+}
+
+.icon-tech {
+  /* background-color: aqua; */
+  width: 30%;
+  padding-top: 1rem;
+}
+
+.content-progress {
+  /* background-color: azure; */
+  width: 70%;
+}
+.title-tech {
+  /* background-color: antiquewhite; */
+  height: 3rem;
+  width: 70%;
+  align-items: center;
+  line-height: 1rem;
+  padding: 0 1rem;
+}
+
+.progress-tech {
+  height: 4rem;
+  /* background-color: blueviolet; */
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-container {
+  width: 90%;
+  height: 1.1rem;
+  background-color: #ddd;
+  border-radius: 6px;
+}
+
+.level {
+  width: 100%;
+  height: 1.1rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+}

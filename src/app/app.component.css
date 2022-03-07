@@ -1,0 +1,7 @@
+.wrapper {
+  height: calc(100vh);
+  position: relative;
+  /* background-color: aqua; */
+  overflow-y: auto;
+  overflow: hidden;
+}

@@ -1,0 +1,58 @@
+.wrapper {
+  height: 2rem;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+}
+
+.section-2 .list-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 5rem;
+}
+
+.list-menu .item-menu {
+  cursor: pointer;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+li {
+  color: rgba(0, 0, 0, 0.548);
+}
+
+.router-link-active {
+  color: black;
+}
+
+.cv-btn {
+  height: 2rem;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: white;
+  height: 2rem;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+button:hover {
+  border-bottom: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}

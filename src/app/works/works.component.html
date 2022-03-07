@@ -1,0 +1,37 @@
+<div class="d-flex flex-wrap">
+  <div
+    class="block-projects animate__animated animate__fadeInUp col-12 col-sm-12 col-md-12 col-lg-5"
+    *ngFor="let item of namesPage"
+  >
+    <div class="block-projects-in">
+      <div class="img-project">
+        <img [src]="item.thumbnail" alt="" />
+      </div>
+
+      <div class="description-img">
+        <p [innerHTML]="item.descript"></p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="block-projects animate__animated animate__fadeInUp col-12 col-sm-12 col-md-12 col-lg-5"
+    *ngFor="let item of images"
+  >
+    <div class="block-projects-in">
+      <div class="img-project">
+        <img [src]="item.thumbnail" alt="" />
+      </div>
+      <div class="title-project">
+        {{ item.title }}
+      </div>
+      <div class="description-img">
+        <p [innerHTML]="item.descrip"></p>
+      </div>
+      <div class="btn-link">
+        <a [href]="item.link" target="_blank">
+          <button class="btn-visit">visitar</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
