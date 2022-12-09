@@ -32,6 +32,11 @@ export class HeaderComponent implements OnInit {
         icon: 'uil uil-brain',
         router: ['/', 'tech'],
       },
+      {
+        name: 'Experiencia',
+        icon: 'uil uil-brain',
+        router: ['/', 'experience'],
+      },
     ];
   }
 }

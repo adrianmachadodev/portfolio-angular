@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExperienceComponent } from './experience/experience.component';
 import { TechComponent } from './tech/tech.component';
 import { WorksComponent } from './works/works.component';
 
@@ -14,6 +15,12 @@ const routes: Routes = [
     component: WorksComponent,
     loadChildren: () =>
       import('./works/works.module').then((m) => m.WorksModule),
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent,
+    loadChildren: () =>
+      import('./experience/experience.module').then((m) => m.ExperienceModule),
   },
   {
     path: '**',
