@@ -1,18 +1,21 @@
 .block-projects {
   height: 20rem;
-
-  display: block;
-  padding: 0.3rem;
-  margin: 0.8rem auto;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .block-projects-in {
-  border: 1px solid rgba(128, 128, 128, 0.089);
-  width: 80%;
-  height: 15rem;
+  /* background-color: burlywood; */
+  /* border: 1px solid rgba(128, 128, 128, 0.062); */
+  width: 10rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -42,27 +45,23 @@ button {
   border: none;
   width: 50%;
   height: 0.9rem;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .icon-tech {
   /* background-color: aqua; */
-  width: 30%;
+  width: 100%;
+  height: 5rem;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .content-progress {
   /* background-color: azure; */
-  width: 70%;
+  width: 100%;
   height: 4rem;
-}
-.title-tech {
-  /* background-color: antiquewhite; */
-  height: 3rem;
-  line-height: 2rem;
-  font-weight: bold;
-  font-size: 1.3em;
   text-align: center;
-  padding-left: 5rem;
+  font-weight: bold;
+  line-height: 2rem;
 }
