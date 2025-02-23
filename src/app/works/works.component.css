@@ -1,67 +1,118 @@
-.block-projects {
-  height: 23rem;
-  display: block;
-  padding: 0 0.25rem;
-  margin: 0.8rem auto;
-}
-
-.block-projects-in {
-  background-color: rgba(240, 236, 236, 0.123);
+img{
   width: 100%;
   height: 100%;
-  margin-bottom: 1rem;
-  align-items: center;
 }
 
-p {
-  font-size: 0.9em;
-}
-
-.img-project {
+.container-title{
   /* background-color: aqua; */
-  height: 12rem;
-  padding: 0.5rem;
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin-bottom: 20px;
+  margin-top: 1rem;
 }
 
-.title-project {
-  /* background-color: aqua; */
-  height: 1.5rem;
-  text-align: center;
-  font-weight: bold;
+.arrow-back{
+  background-color: hsl(0, 0%, 5%);
+  width: 40px;
+  height: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.arrow-back:hover{
+  transition-duration: 0.4s;
+  background-color: rgb(26, 26, 26);
+  border-radius: 20px;
+
+}
+
+
+.arrow-back i{
+  color: white;
+  font-size: 25px;
+  margin-left: 6px;
+}
+
+.container-title .title-project{
+  /* background-color:blueviolet; */
+  width: 300px;
+  height: 2rem;
+  font-family: "Integral";
+  color: white;
   line-height: 1.5rem;
 }
 
-.description-img {
-  /* background-color: violet; */
-
-  height: 5rem;
-  padding: 0.5rem;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.btn-link {
-  height: 2rem;
-  /* background-color: aqua; */
-  text-align: center;
-}
-
-button {
-  border: none;
-  width: 10rem;
-  height: 2rem;
+.cards-projects{
+  /* background-color: wheat; */
+  width: 20rem;
+  min-height: 20rem;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* border: 1px solid rgba(63, 63, 63, 0.185); */
+  border-radius: 10px;
+  padding: 10px;
+  bottom: 0;
+  position: relative;
   cursor: pointer;
-  background-color: black;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  
 }
 
-button:hover {
-  background-color: #222121a4;
-  transition: all ease 2s;
+.cards-projects .img-project{
+  /* background-color: chocolate; */
+  width: 100%;
+  /* height: 10rem; */
+}
+
+.img-project img{
+  border-radius: 5px;
+  background-size: cover;
+}
+
+.cards-projects .title-card{
+  font-family: "Integral";
+  color: white;
+}
+
+.cards-projects .text-description{
+  font-family: 'Inter thin';
+  color: rgb(148 163 184);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.cards-projects .submenu-techs{
+  /* background-color: brown; */
+  width: 100%;
+  height: 2rem;
+  margin-top: 15px;
+}
+
+.submenu-techs .icon-tech{
+  /* background-color:chocolate; */
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 4px;
+  filter: brightness(0) invert(1);
+}
+
+.cards-projects:hover{
+  box-shadow: rgba(99, 99, 99, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation: toUp 0.6s forwards;
+  transition-duration: 0.3s;
+
+}
+
+@keyframes toUp {
+  from{
+    buttom: 0px
+  }
+  to{
+    bottom: 6px;
+  }
 }

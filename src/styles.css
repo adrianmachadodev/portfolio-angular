@@ -2,10 +2,45 @@
 /* body general de la app */
 
 @import "~perfect-scrollbar/css/perfect-scrollbar.css";
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter-Bold.woff2") format('woff2');
+  font-display:swap;
+
+}
+
+@font-face {
+  font-family: "Inter thin";
+  src: url("assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-display:swap;
+
+}
+
+@font-face {
+  font-family: "Aspekta";
+  src: url("assets/fonts-aspekta/Aspekta-1000.woff2") format('woff2');
+  font-display:swap;
+
+}
+
+@font-face {
+  font-family: "Aspekta thin";
+  src: url("assets/fonts-aspekta/Aspekta-100.woff2") format('woff2');
+  font-display:swap;
+
+}
+
+@font-face {
+  font-family: "Integral";
+  src: url("assets/font-integral/Fontspring-DEMO-integralcf-bold.otf")format(opentype);
+  font-display:swap;
+
+}
 
 * {
   margin: 0;
 }
+
 
 :root {
   --color-1: #444;
@@ -14,9 +49,10 @@
 html,
 body {
   min-height: 100vh;
-  background-color: white;
-  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 5%);
+  font-family: 'montserrat';
   box-sizing: border-box;
+  animation-delay: 0s;
 }
 
 a:visited,

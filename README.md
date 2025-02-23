@@ -6,8 +6,8 @@ Utilizando componentes reutilizables, rutas entre otras caracteristicas de Angul
 
 ----------------------------------------------
 
-New portfolio 2024
+New portfolio 2025
 This portfolio was created with the Angular framework, I show my experience, technological stack and personal projects.
 I used reusables components, path and others functions.
 
-Portfolio 2024 by Adrián Machado
+Portfolio 2025 by Adrián Machado

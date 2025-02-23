@@ -2,7 +2,7 @@
   height: calc(100vh);
 
   position: relative;
-  /* background-color: aqua; */
+  background-color:hsl(0, 0%, 5%);
   overflow-y: auto;
   overflow: hidden;
 }

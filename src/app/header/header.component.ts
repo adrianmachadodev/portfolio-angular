@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit {
 
   linkCv: Array<btnModel> = [
     {
-      name: 'Curriculum Vitae',
-      link: '../../../assets/curriculum.pdf',
+      name: 'Descargar CV',
+      link: '../../../assets/adrianmachado_resume.pdf',
     },
   ];
 
@@ -23,20 +23,22 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.mainMenu.defaultOptions = [
       {
-        name: 'Portfolio',
-        icon: 'uil uil-clipboard-notes',
-        router: ['/', 'works'],
+        name: 'Experiencia',
+        // icon: 'uil uil-info-circle',
+        icon: 'uil uil-bag',
+        router: ['/', 'experience'],
       },
       {
         name: 'Tecnologias',
-        icon: 'uil uil-brain',
+        icon: 'uil uil-wrench',
+        // icon: 'uil uil-book-open',
         router: ['/', 'tech'],
       },
-      {
-        name: 'Experiencia',
-        icon: 'uil uil-brain',
-        router: ['/', 'experience'],
-      },
+      // {
+      //   name: 'Portfolio',
+      //   icon: 'uil uil-clipboard-notes',
+      //   router: ['/', 'works'],
+      // },
     ];
   }
 }

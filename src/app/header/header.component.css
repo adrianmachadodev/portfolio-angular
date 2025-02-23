@@ -1,58 +1,90 @@
 .wrapper {
-  height: 2rem;
-  display: flex;
-  padding: 1rem 0;
   justify-content: space-between;
+  display: flex;
+  height: 3rem;
+  padding: 0 1rem;
   align-items: center;
   align-content: center;
-  background-color: white;
+  border-bottom: 1px solid rgb(32, 32, 32);
+  /* background-color: red; */
 }
 
-.section-2 .list-menu {
+.section-1 .list-menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 50px;
+  line-height: 50px;
   display: flex;
-  width: 5rem;
+  gap: 4px;
+  /* background-color: aquamarine; */
 }
 
 .list-menu .item-menu {
+  /* background-color: antiquewhite; */
   cursor: pointer;
   padding: 0 1rem;
+  height: 50px;
+  color: white;
   font-weight: bold;
+  display: block;
+  font-size: 1.5em;
 }
 
-li {
-  color: rgba(0, 0, 0, 0.548);
+.item-menu i {
+  color: white;
 }
 
-.router-link-active {
-  color: black;
+.item-menu i:hover {
+  color: rgb(148, 163, 184);
 }
+
+.router-link-active i {
+  color: rgb(148, 163, 184);
+  border-bottom: 2px solid rgb(148 163 184);
+}
+/* Section button cv */
 
 .cv-btn {
+  width: 10rem;
   height: 2rem;
   padding: 0 1rem;
   margin-right: 1rem;
   border-radius: 15px;
   line-height: 2rem;
-  cursor: pointer;
 }
 
 button {
   border: none;
-  background-color: white;
+  /* background-color: aqua; */
+  width: 10rem;
+  background-color: hsl(0, 0%, 5%);
   height: 2rem;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-family: "Integral";
+  font-size: 15px;
+  border-radius: 15px;
+  color: #ffffffc2;
+
 }
 
 button:hover {
-  border-bottom: 1px solid black;
+  transition-duration: 0.4s;
+  background: #111 -webkit-linear-gradient(left, #ffffff86, #fff) no-repeat 0 0 / 40px;
+  background-clip: text;
+  -webkit-text-fill-color: #ffffffc2;
+  animation: sweep 0.7s ease forwards;
 }
 
 a {
   text-decoration: none;
+}
+
+@keyframes sweep {
+  0% {
+    background-position: -90% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
 }

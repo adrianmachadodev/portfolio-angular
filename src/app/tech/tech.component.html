@@ -1,14 +1,39 @@
-<div class="d-flex flex-wrap">
-  <div
-    class="block-projects animate__animated animate__fadeInUp col-12 col-sm-12 col-md-12 col-lg-5"
-    *ngFor="let item of tech"
-  >
-    <div class="block-projects-in d-flex flex-wrap">
-      <div class="icon-tech">
-        <i [ngClass]="['uil', item.icon]" style="font-size: 5rem"></i>
+<div class="d-flex wrapper-techs">
+  <h3 class="header-techs">{{ titleTechs }}</h3>
+  <div class="wrapper-cards">
+    <div class="block-projects d-flex" *ngFor="let item of tech">
+      <div class="block-projects-in d-flex flex-wrap">
+        <div class="icon-tech">
+          <img [src]="item.icon" alt="" />
+        </div>
+        <div class="content-progress">
+          <h3>{{ item.name }}</h3>
+        </div>
       </div>
-      <div class="content-progress">
-       {{item.name}}
+    </div>
+  </div>
+
+  <div class="header-projects">
+    <h3>{{ titleProjects }} 🔗</h3>
+  </div>
+
+  <div class="card-projects" (click)="navigatePageProject()">
+    <div class="icon-project">
+      <i class="uil uil-book-alt"></i>
+    </div>
+    <div class="wrapper-text">
+      <div class="descript-project">
+        <p>
+          A lo largo de mi trayectoria, he desarrollado diversos proyectos
+          personales en los que he aplicado mis conocimientos de Angular,
+          experimentando con sus múltiples características y funcionalidades.
+          Cada uno de estos proyectos me ha permitido profundizar en esta
+          tecnología y perfeccionar mis habilidades para crear aplicaciones web
+          dinámicas y eficientes. 🔗
+        </p>
+      </div>
+      <div class="arrow-icon">
+        <i class="uil uil-arrow-right"></i>
       </div>
     </div>
   </div>

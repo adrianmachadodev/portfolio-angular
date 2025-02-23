@@ -1,21 +1,52 @@
-<div class="wrapper animate__animated animate__fadeInUp">
-  <div class="wrapper-exp">
-    <div class="exp-moby">
-      <div class="logo-emp">
-        <img src="../../assets/images/moby.jpg" alt="" />
-      </div>
-      <div class="info-emp">
-        <div class="title-emp">
-          <div class="subtitle-emp">MobyDigital - Angular Developer</div>
-          <div class="time-emp">Apr 2022 - Jun 2022</div>
+<div class="wrapper d-flex">
+  <!-- Section cards experience -->
+  <section class="wrapper-experience">
+    <h1 class="title-experience">
+      {{ capitalizeInfoCompany(experienceTitle) }}
+    </h1>
+    <ul>
+      <li *ngFor="let workExp of experienceObj">
+        <div class="card-experience">
+          <img
+            loading="lazy"
+            srcset="
+              {{workExp.logoCompany}}   320w,
+              {{workExp.logoCompany}}   768w,
+              {{workExp.logoCompany}} 1024w
+            "
+            sizes="(max-width: 768px) 100vw, 50vw"
+            [src]="workExp.logoCompany"
+            class="logo-company"
+            alt="img-company"
+          />
+          <div class="container-company">
+            <p class="date-company">
+              {{ workExp.dateExp }}
+            </p>
+            <h3 class="position-work">
+              {{ capitalizeInfoCompany(workExp.positionWork) }}
+            </h3>
+            <h4 class="name-company">
+              {{ workExp.titleCompany }}
+            </h4>
+            <p
+              class="descript-experience"
+              [innerHTML]="workExp.descriptExp"
+            ></p>
+          </div>
         </div>
-        <div class="text-emp">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-          possimus. Minus vitae pariatur et nemo, necessitatibus quisquam
-          blanditiis repellat voluptate cumque recusandae quo quasi aut sed.
-          Obcaecati in autem ullam.
-        </div>
-      </div>
-    </div>
-  </div>
+      </li>
+    </ul>
+  </section>
+  <!-- Section text contact -->
+  <section class="wrapper-contact">
+    <h3 class="title-contact">
+      {{ capitalizeInfoCompany(connectMessage) }}
+    </h3>
+    <p class="contact-text">{{ textConnect }}</p>
+  </section>
+  <!-- Section divider -->
+  <section class="wrapper-divider">
+    <span class="copyright">Copyright © adrianmachado.</span>
+  </section>
 </div>

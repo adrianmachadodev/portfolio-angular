@@ -1,5 +1,5 @@
-<div class="wrapper">
-  <div class="section-2">
+<div class="wrapper d-flex">
+  <div class="section-1">
     <ul class="list-menu">
       <li
         class="item-menu d-flex"
@@ -7,10 +7,7 @@
         routerLinkActive="router-link-active"
         *ngFor="let item of mainMenu.defaultOptions"
       >
-        <div class="icon">
-          <i [ngClass]="['uil', item.icon]"></i>
-        </div>
-        <span class="link">{{ item.name }}</span>
+        <i [ngClass]="item.icon"></i>
       </li>
     </ul>
   </div>

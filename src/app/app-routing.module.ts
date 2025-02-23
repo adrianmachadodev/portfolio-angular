@@ -11,10 +11,13 @@ const routes: Routes = [
     loadChildren: () => import('./tech/tech.module').then((m) => m.TechModule),
   },
   {
-    path: 'works',
-    component: WorksComponent,
-    loadChildren: () =>
-      import('./works/works.module').then((m) => m.WorksModule),
+    path: 'tech',
+    children: [
+      {
+        path: 'projects',
+        component: WorksComponent,
+      },
+    ],
   },
   {
     path: 'experience',
@@ -22,9 +25,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./experience/experience.module').then((m) => m.ExperienceModule),
   },
+  
   {
     path: '**',
-    redirectTo: '/works',
+    redirectTo: '/experience',
   },
 ];
 

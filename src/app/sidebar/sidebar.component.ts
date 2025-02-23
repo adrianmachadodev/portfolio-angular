@@ -18,15 +18,18 @@ export class SidebarComponent implements OnInit, AfterViewInit {
   links: Array<LinkModel> = [
     {
       link: 'https://www.linkedin.com/in/adriangmachado/',
-      icon: '<i class="uil uil-linkedin"></i>',
+      message: '¡Conectemos en LinkedIn! 🤝',
+      icon: 'uil uil-linkedin',
     },
     {
       link: 'https://github.com/adrianmachadodev',
-      icon: '<i class="uil uil-github"></i>',
+      message:'¡Mis proyectos en GitHub! 🚀',
+      icon: "uil uil-github",
     },
     {
       link: 'mailto:machadoadriangabriel@gmail.com',
-      icon: '<i class="uil uil-envelope"></i>',
+      message: '¡No dudes en enviarme un correo! 🔔',
+      icon: 'uil uil-envelope',
     },
   ];
 
@@ -44,25 +47,32 @@ export class SidebarComponent implements OnInit, AfterViewInit {
     const target = this.asTitle.nativeElement;
     const writer = new Typewriter(target, {
       loop: true,
-      typeColor: 'black',
+      typeColor: 'white',
     });
 
     writer
-      .changeCursorColor('black')
-      .type('Soy desarrollador Front-End.')
+      .changeCursorColor('gray')
+      .type(this.capitalizeText('desarrollador Front-End.'))
       .rest(7000)
       .remove(29)
-      .type('Estudiante de programación.')
+      .type(this.capitalizeText('Estudiante de programación.'))
       .rest(7000)
       .remove(27)
-      .type('Diseñador Web.')
+      .type(this.capitalizeText('Diseñador Web.'))
       .rest(7000)
       .remove(13)
       .start();
   };
+
+  capitalizeText(profession:string){
+    return profession.toLocaleUpperCase();
+  }
 }
+
+
 
 class LinkModel {
   link: string;
+  message:string;
   icon: string;
 }
