@@ -1,15 +1,27 @@
 <div class="wrapper">
-  <div class="logo animate__animated animate__bounceInDown">
-    <a href="/">
-      <img
-      loading="lazy"
-      srcset="../../assets/logo-new/logo-adrian.webp"
-      class="img-logo shimmer"
-      alt="logo-adrianmachado"
-    />
-    </a>
+  <div class="contain-logo">
+    <div class="logo">
+      <a href="/">
+        <img
+          loading="lazy"
+          srcset="../../assets/logo-new/logo-adrian.webp"
+          class="img-logo shimmer"
+          style="margin-top: 5px; transform: scale(120%)"
+          alt="logo-adrianmachado"
+        />
+      </a>
+    </div>
+    <div class="text-name">
+      <h3 class="sub-name">ADRIÁN MACHADO</h3>
+    </div>
   </div>
-  <div class="pre-title">Hola, soy Adrián</div>
+  <div class="techs">
+    <ul *ngFor="let item of pills">
+      <li class="pill-tech">
+        {{item.name}}
+      </li>
+    </ul>
+  </div>
   <br />
   <h1 #asTitle class="subtitle"></h1>
   <br />
@@ -19,12 +31,16 @@
     <h1 class="header-style">COMIENZOS</h1>
   </div>
 
-  <p class="margin-text">
-    Soy desarrollador frontend, inicié mi carrera en 2017 como diseñador web. A
-    raíz de esto fue donde despertó la pasión por la tecnología. Luego de este
-    comienzo, me adentré en la programación, perfeccionando mis habilidades en
-    Angular y tecnologías modernas de frontend.
-  </p>
+  <div class="info-experience">
+    <div class="info">
+      <p class="margin-text">
+        Soy desarrollador frontend, inicié mi carrera en 2017 como diseñador
+        web. A raíz de esto fue donde despertó la pasión por la tecnología.
+        Luego de este comienzo, me adentré en la programación, perfeccionando
+        mis habilidades en Angular y tecnologías modernas de frontend.
+      </p>
+    </div>
+  </div>
   <br />
 
   <!-- experience -->
@@ -32,13 +48,33 @@
     <h1 class="header-style">EXPERIENCIA LABORAL</h1>
   </div>
 
-  <p class="margin-text">
-    En 2022, inicié mi primer proyecto en el sector IT como Desarrollador Angular Trainee, enfocándome en la creación de un dashboard para el equipo de Recursos Humanos. Este proyecto representó una excelente oportunidad para desarrollar mis habilidades técnicas y comprender los desafíos reales en el entorno profesional. Fue una experiencia enriquecedora que me permitió adquirir un conocimiento profundo de Angular y mejorar mis habilidades en desarrollo de interfaces.
-  </p>
+  <div class="info-experience">
+    <div class="info">
+      <p class="margin-text">
+        En 2022, inicié mi primer proyecto en el sector IT como Desarrollador
+        Angular Trainee, enfocándome en la creación de un dashboard para el
+        equipo de Recursos Humanos. Este proyecto representó una excelente
+        oportunidad para desarrollar mis habilidades técnicas y comprender los
+        desafíos reales en el entorno profesional. Fue una experiencia
+        enriquecedora que me permitió adquirir un conocimiento profundo de
+        Angular y mejorar mis habilidades en desarrollo de interfaces.
+      </p>
+    </div>
+  </div>
 
-  <p class="margin-text">
-    En 2023, me uní al desarrollo de <strong>FusionPax</strong>, un sistema avanzado para el sector turístico creado con Angular, que permite la reserva de múltiples productos, como hoteles, tours y diversas categorías. Actualmente, sigo trabajando en este proyecto, donde he tenido la oportunidad de ampliar mis conocimientos en desarrollo web y contribuir de manera significativa al equipo con mis habilidades y experiencia.
-  </p>
+  <div class="info-experience">
+    <div class="info">
+      <p class="margin-text">
+        En 2023, me uní al desarrollo de <strong>FusionPax</strong>, un sistema
+        avanzado para el sector turístico creado con Angular, que permite la
+        reserva de múltiples productos, como hoteles, tours y diversas
+        categorías. Actualmente, sigo trabajando en este proyecto, donde he
+        tenido la oportunidad de ampliar mis conocimientos en desarrollo web y
+        contribuir de manera significativa al equipo con mis habilidades y
+        experiencia.
+      </p>
+    </div>
+  </div>
   <br />
 
   <nav>

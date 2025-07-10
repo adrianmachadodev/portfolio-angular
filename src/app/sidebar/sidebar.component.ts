@@ -17,7 +17,7 @@ export class SidebarComponent implements OnInit, AfterViewInit {
   @ViewChild('asTitle') asTitle: ElementRef;
   links: Array<LinkModel> = [
     {
-      link: 'https://www.linkedin.com/in/adriangmachado/',
+      link: 'https://www.linkedin.com/in/machadoadrian/',
       message: '¡Conectemos en LinkedIn! 🤝',
       icon: 'uil uil-linkedin',
     },
@@ -32,6 +32,31 @@ export class SidebarComponent implements OnInit, AfterViewInit {
       icon: 'uil uil-envelope',
     },
   ];
+
+  pills:Array<TechPill> = [
+    {
+      name: "#HTML"
+    },
+    {
+      name: "#CSS"
+    },
+    {
+      name: "#JavaScript"
+    },
+    {
+      name: "#TypeScript"
+    },
+    {
+      name: "#Angular"
+    },
+    {
+      name: "#Astro"
+    },
+    {
+      name: "#Tailwind"
+    },
+    
+  ]
 
   constructor() {
     this.asTitle;
@@ -75,4 +100,8 @@ class LinkModel {
   link: string;
   message:string;
   icon: string;
+}
+
+class TechPill{
+  name:string;
 }

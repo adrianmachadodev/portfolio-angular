@@ -11,32 +11,113 @@ img {
   border-right: 1px solid rgb(29, 29, 29);
 }
 
-.margin-text {
-  margin-bottom: 1rem;
-  line-height: 24px;
-  padding: 1px;
-  font-family: "Inter thin", Arial, sans-serif;
-  font-size: 15px;
-  color: #747e86;
+.contain-logo {
+  /* background-color: brown; */
+  width: 40rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .logo {
   width: 3rem;
-  height: 3rem;
+  height: 2rem;
   /* background-color: rebeccapurple; */
   /* border-radius: 50px; */
-  margin-top: 2px;
+  margin-top: 15px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   padding: 10px;
 }
 
+.text-name {
+  width: 15rem;
+  height: 2rem;
+  /* background-color: cornflowerblue; */
+  /* border-radius: 50px; */
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.text-name .sub-name {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.techs {
+  /* background-color: chocolate; */
+  width: 100%;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.techs ul {
+  display: table;
+  list-style-type: none;
+  padding: 0;
+}
+
+.techs .pill-tech {
+  background-color: rgba(59, 59, 59, 0.178);
+  width: 75px;
+  height: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 2rem;
+  color: rgb(100, 100, 100);
+  font-family: "Inter thin", Arial, sans-serif;
+  font-size: 11px;
+  color: rgb(148 163 184);
+  font-weight: bold;
+  padding: 3px;
+}
+
+.info-experience {
+  /* background-color: aqua; */
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-experience .info {
+  /* background-color: bisque; */
+  width: 85%;
+  min-height: 50px;
+}
+
+.margin-text {
+  margin-bottom: 1rem;
+  line-height: 24px;
+  padding: 1px;
+  font-family: "Inter thin", Arial, sans-serif;
+  font-size: 15px;
+  color: rgb(148 163 184);
+  text-wrap: balance;
+}
+
 .pre-title {
   padding: 0 0.3rem;
   font-size: 1em;
   color: white;
-  font-family: 'montserrat';
+  font-family: "montserrat";
 }
 
 .subtitle {
@@ -45,8 +126,7 @@ img {
   margin-bottom: 6px;
   font-size: 1.5em;
   font-weight: 900;
-  font-family: 'montserrat';
-
+  font-family: "montserrat";
 }
 
 /* Header initial */
@@ -76,15 +156,14 @@ img {
   pointer-events: none;
 }
 
-nav{
+nav {
   /* background-color: chocolate; */
   width: 100%;
   min-height: 3rem;
   margin-top: 5rem;
 }
 
-
-nav ul{
+nav ul {
   /* background-color:crimson; */
   list-style: none;
   padding: 0;
@@ -94,7 +173,7 @@ nav ul{
   border-collapse: separate;
 }
 
-nav ul li{
+nav ul li {
   /* background-color:aquamarine; */
   width: 3rem;
   height: 3rem;
@@ -102,25 +181,24 @@ nav ul li{
   position: relative;
 }
 
-nav ul li i{
+nav ul li i {
   font-size: 30px;
   margin-left: 10px;
   color: white;
 }
 
-nav ul li i:hover{
+nav ul li i:hover {
   color: rgb(72, 89, 100);
   transition-duration: 0.9s;
 }
 
-.links-social{
+.links-social {
   /* background-color:#adb5bd ; */
   display: inline-block;
   width: 3rem;
   min-height: 10px;
-  margin-top:6px;
+  margin-top: 6px;
 }
-
 
 .links-social .tooltip-text {
   visibility: hidden;
@@ -138,15 +216,13 @@ nav ul li i:hover{
 
   position: absolute;
   z-index: 1;
-  white-space:nowrap;
+  white-space: nowrap;
   opacity: 0;
 }
-
 
 .links-social:hover .tooltip-text {
   transition: all ease 1s;
   transition-duration: 0.4s;
   opacity: 1;
   visibility: visible;
-
 }
