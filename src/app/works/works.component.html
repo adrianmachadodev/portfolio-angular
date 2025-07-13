@@ -8,8 +8,15 @@
       {{ nameParam }}
     </h3>
   </div>
-  <app-card-project
-    [arrayProjects]="arrayProjects"
-    [nameParameter]="nameParam"
-  ></app-card-project>
+
+  <!-- Section Angular -->
+  <app-section
+  [frameworks]="arrayProjects"
+  [typeFramework]="'Angular'"
+  > </app-section>
+
+  <app-section
+  [frameworks]="arrayAstro"
+  [typeFramework]="'Astro'"
+  > </app-section>
 </div>

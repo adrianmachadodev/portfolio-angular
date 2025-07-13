@@ -1,18 +1,18 @@
-<section *ngIf="nameParameter == 'angular'">
-  <div class="cards-projects" *ngFor="let project of arrayProjects">
-    <a class="link-card" [href]="project.link" target="_blank">
+<section *ngIf="typeFramework == 'Angular'">
+  <div class="cards-projects">
+    <a class="link-card" [href]="arrayProjects.link" target="_blank">
       <!-- Img -->
       <div class="img-project">
-        <img loading="lazy" [src]="project.thumbnail" alt="img_yanina" />
+        <img loading="lazy" [src]="arrayProjects.thumbnail" alt="img_yanina" />
       </div>
       <!-- Title-project -->
-      <h3 class="title-card">{{ project.title }}</h3>
+      <h3 class="title-card">{{ arrayProjects.title }}</h3>
       <!-- text-description -->
-      <p class="text-description" [innerHTML]="project.descrip"></p>
+      <p class="text-description" [innerHTML]="arrayProjects.descrip"></p>
       <!-- submenu-techs -->
       <div class="submenu-techs">
         <img
-          *ngFor="let icon of project.icon_tech"
+          *ngFor="let icon of arrayProjects.icon_tech"
           class="icon-tech"
           [src]="icon.icon"
           alt="icon-tech"
@@ -22,6 +22,6 @@
   </div>
 </section>
 
-<section *ngIf="nameParameter == 'astro'">
+<section *ngIf="typeFramework == 'Astro'">
   <h3 class="title-card" style="color: white; font-family: Integral;">Coming soon</h3>
 </section>
