@@ -13,6 +13,7 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { TechComponent } from './tech/tech.component';
 import { RouterModule } from '@angular/router';
 import { ExperienceComponent } from './experience/experience.component';
+import { SharedModule } from './shared/shared.module';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -26,12 +27,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     WorksComponent,
     TechComponent,
     ExperienceComponent,
+
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     PerfectScrollbarModule,
+    SharedModule
   ],
   exports: [
     AppComponent,
@@ -39,6 +42,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     SidebarComponent,
     WorksComponent,
     TechComponent,
+
   ],
   providers: [
     {

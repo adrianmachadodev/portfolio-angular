@@ -95,6 +95,18 @@ button {
   filter: brightness(0) invert(1);
 }
 
+.icon-card {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  filter: brightness(0) invert(1);
+  transform: scale(65%);
+}
+
 .content-progress {
   /* background-color: azure; */
   width: 100%;

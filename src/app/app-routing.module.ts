@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'tech',
     children: [
       {
-        path: 'projects',
+        path: 'projects/:name',
         component: WorksComponent,
       },
     ],

@@ -17,10 +17,11 @@
     <h3>{{ titleProjects }} 🔗</h3>
   </div>
 
-  <div class="card-projects" (click)="navigatePageProject()">
+  <div class="card-projects" (click)="navigatePageProject('angular')" >
     <div class="header-card">
       <div class="icon-project">
-        <i class="uil uil-book-alt"></i>
+        <!-- <i class="uil uil-book-alt"></i> -->
+         <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-plain.svg" alt="">
       </div>
       <div class="title-card">
         <h3>PROYECTOS EN ANGULAR</h3>
@@ -38,16 +39,17 @@
           dinámicas y eficientes. 🔗
         </p>
       </div>
-      <div class="arrow-icon">
+      <div class="arrow-icon" >
         <i class="uil uil-arrow-right"></i>
       </div>
     </div>
   </div>
 
-  <div class="card-projects">
+  <div class="card-projects" (click)="navigatePageProject('astro')">
     <div class="header-card">
       <div class="icon-project">
-        <i class="uil uil-book-alt"></i>
+        <!-- <i class="uil uil-book-alt"></i> -->
+         <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-plain.svg" alt="">
       </div>
       <div class="title-card">
         <h3>PROYECTOS EN ASTRO</h3>

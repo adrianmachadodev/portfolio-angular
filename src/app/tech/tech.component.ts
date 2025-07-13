@@ -74,8 +74,9 @@ export class TechComponent implements OnInit {
   ngOnInit(): void {}
 
 
-  navigatePageProject(){
-    this.route.navigate(["/tech/projects"])
+  navigatePageProject(framework:any){
+    console.log(framework);
+    this.route.navigate(["/tech/projects/", framework])
   }
 }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-works',
@@ -8,6 +8,7 @@ import { Route, Router } from '@angular/router';
 })
 export class WorksComponent implements OnInit {
   config: any;
+  nameParam:any;
 
   arrayProjects: LinkModel[] = [
     {
@@ -139,12 +140,18 @@ export class WorksComponent implements OnInit {
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route:ActivatedRoute) {
+    this.nameParam = this.route.snapshot.paramMap.get('name');
+    console.log('Obtuve el nameparam',this.nameParam);
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   backToTech() {
     this.router.navigate(['/tech']);
+
   }
 }
 
