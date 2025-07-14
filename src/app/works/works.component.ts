@@ -14,7 +14,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/yanina.jpg`,
       title: 'Sitio Web',
-      type:'Angular',
       descrip:
         'Mi comienzo en el desarrollo web, fue con una página web para un lugar de comidas, en la que solamente se mostraban los productos, junto a sus gustos, y variedades. Toda la información que se renderizaba era de forma estática. (2018)',
       icon_tech: [
@@ -29,7 +28,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/yanina2.jpg`,
       title: 'Sitio Web',
-      type:'Angular',
       descrip:
         'En esta imagen se puede llegar a ver, la versión final de la página, hubo muchos cambios a la primera versión, con efectos de zoom realizados en CSS, una galería de fotos mostrando las distintas variedades de productos.',
       icon_tech: [
@@ -44,7 +42,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/app_rickandmorty.jpg`,
       title: 'Rick and Morty app',
-      type:'Angular',
       descrip:
         'Proyecto creado en Angular, utilizando servicios y la api de rickandmortyapi.com. Este proyecto contiene búsqueda de personajes y un paginador para ver cada personaje con sus características',
       link: 'https://lucid-agnesi-24cd52.netlify.app',
@@ -66,7 +63,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/Weatherappangular.jpg`,
       title: 'Weather app',
-      type:'Angular',
       descrip:
         'Realice una app para el clima con Angular, en donde utilice la API de <strong>openweatherapi</strong>. Su diseño está logrado con flexbox y css grid. En cada parte de la app utilicé templates, rutas, servicios, paths, entre otros. <strong>(Actualmente me encuentro mejorando la parte visual de esta app)</strong>',
       link: 'https://frosty-mcclintock-617535.netlify.app',
@@ -91,7 +87,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/todolist.jpg`,
       title: 'TO DO list',
-      type:'Angular',
       descrip:
         'Esta app realizada en Angular, es un to-do list, utilice componentes de bootstrap para su diseño.',
       link: 'https://objective-torvalds-35b397.netlify.app/',
@@ -119,7 +114,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/form-validator2.jpg`,
       title: 'Form Validator',
-      type:'Angular',
       descrip:
         'Este es un formulario construido con los componentes de bootstrap. Este pequeño proyecto no está terminado completamente. Es una práctica en donde utilice progressive web apps (PWA) de Angular.',
       link: 'https://trusting-turing-fb5dd1.netlify.app/form',
@@ -150,7 +144,6 @@ export class WorksComponent implements OnInit {
     {
       thumbnail: `../../assets/images/yanina.jpg`,
       title: 'Rick And Morty - Astro',
-      type:'Astro',
       descrip:
         'Mi comienzo en el desarrollo web, fue con una página web para un lugar de comidas, en la que solamente se mostraban los productos, junto a sus gustos, y variedades. Toda la información que se renderizaba era de forma estática. (2018)',
       icon_tech: [

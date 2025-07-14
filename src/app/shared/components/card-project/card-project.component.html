@@ -1,4 +1,4 @@
-<section *ngIf="typeFramework == 'Angular'">
+<section *ngIf="typeFramework == nameParameter">
   <div class="cards-projects">
     <a class="link-card" [href]="arrayProjects.link" target="_blank">
       <!-- Img -->
@@ -20,8 +20,4 @@
       </div>
     </a>
   </div>
-</section>
-
-<section *ngIf="typeFramework == 'Astro'">
-  <h3 class="title-card" style="color: white; font-family: Integral;">Coming soon</h3>
 </section>

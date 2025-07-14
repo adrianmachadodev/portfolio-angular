@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
   @Input() frameworks: any[] = [];
-  @Input() typeFramework: 'Angular' | 'Astro' = 'Angular';
+  @Input() typeFramework: 'angular' | 'astro' = 'angular';
+  @Input() nameParam:string;
 
   constructor() {}
 
