@@ -1,7 +1,12 @@
 <div class="section-wrapper">
-  <ul>
+  <ul >
     <li *ngFor="let item of frameworks">
-      <app-card-project [arrayProjects]="item" [typeFramework]="typeFramework" [nameParameter]="nameParam"> </app-card-project>
+      <app-card-project
+        [arrayProjects]="item"
+        [typeFramework]="typeFramework"
+        [nameParameter]="nameParam"
+      >
+      </app-card-project>
     </li>
   </ul>
 </div>
