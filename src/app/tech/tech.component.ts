@@ -64,6 +64,22 @@ export class TechComponent implements OnInit {
       width: 40,
       percent: 40,
     },
+    {
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-plain.svg',
+      name: 'Astro',
+      color: 'black',
+      width: 40,
+      percent: 40,
+      label:'En proceso de aprendizaje'
+    },
+    {
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg',
+      name: 'Tailwindcss',
+      color: 'black',
+      width: 40,
+      percent: 40,
+      label:'En proceso de aprendizaje'
+    },
   ];
 
   titleTechs:string = 'TECH STACK'
@@ -86,4 +102,5 @@ class LinkModel {
   color: string;
   width: number;
   percent: number;
+  label?: string;
 }

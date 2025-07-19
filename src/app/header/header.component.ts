@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   linkCv: Array<btnModel> = [
     {
       name: 'Descargar CV',
-      link: '../../../assets/adrianmachado_resume.pdf',
+      link: '../../../assets/Adrián_Machado- CV 2025.pdf',
     },
   ];
 

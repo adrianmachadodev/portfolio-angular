@@ -9,63 +9,69 @@
         <div class="content-progress">
           <h3>{{ item.name }}</h3>
         </div>
+        <div class="content-progress" *ngIf="item.label">
+          <span style="font-size: 10px; color: rgb(72, 89, 100); ;">{{ item.label }}</span>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="header-projects">
-    <h3>{{ titleProjects }} 🔗</h3>
-  </div>
+<div class="header-projects">
+  <h3>{{ titleProjects }} 🔗</h3>
+</div>
 
-  <div class="card-projects" (click)="navigatePageProject('angular')" >
-    <div class="header-card">
-      <div class="icon-project">
-        <!-- <i class="uil uil-book-alt"></i> -->
-         <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-plain.svg" alt="">
-      </div>
-      <div class="title-card">
-        <h3>PROYECTOS EN ANGULAR</h3>
-      </div>
+<div class="card-projects" (click)="navigatePageProject('angular')">
+  <div class="header-card">
+    <div class="icon-project">
+      <!-- <i class="uil uil-book-alt"></i> -->
+      <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-plain.svg"
+        alt="">
     </div>
-
-    <div class="wrapper-text">
-      <div class="descript-project">
-        <p>
-          A lo largo de mi trayectoria, he desarrollado diversos proyectos
-          personales en los que he aplicado mis conocimientos de Angular,
-          experimentando con sus múltiples características y funcionalidades.
-          Cada uno de estos proyectos me ha permitido profundizar en esta
-          tecnología y perfeccionar mis habilidades para crear aplicaciones web
-          dinámicas y eficientes. 🔗
-        </p>
-      </div>
-      <div class="arrow-icon" >
-        <i class="uil uil-arrow-right"></i>
-      </div>
+    <div class="title-card">
+      <h3>PROYECTOS EN ANGULAR</h3>
     </div>
   </div>
 
-  <div class="card-projects" (click)="navigatePageProject('astro')">
-    <div class="header-card">
-      <div class="icon-project">
-        <!-- <i class="uil uil-book-alt"></i> -->
-         <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-plain.svg" alt="">
-      </div>
-      <div class="title-card">
-        <h3>PROYECTOS EN ASTRO</h3>
-      </div>
+  <div class="wrapper-text">
+    <div class="descript-project">
+      <p>
+        A lo largo de mi trayectoria, he desarrollado diversos proyectos
+        personales en los que he aplicado mis conocimientos de Angular,
+        experimentando con sus múltiples características y funcionalidades.
+        Cada uno de estos proyectos me ha permitido profundizar en esta
+        tecnología y perfeccionar mis habilidades para crear aplicaciones web
+        dinámicas y eficientes. 🔗
+      </p>
     </div>
-
-    <div class="wrapper-text">
-      <div class="descript-project">
-        <p>
-          Próximamente
-        </p>
-      </div>
-      <div class="arrow-icon">
-        <i class="uil uil-arrow-right"></i>
-      </div>
+    <div class="arrow-icon">
+      <i class="uil uil-arrow-right"></i>
     </div>
   </div>
-  
+</div>
+
+<!-- (click)="navigatePageProject('astro')" -->
+<div class="card-projects">
+  <div class="header-card">
+    <div class="icon-project">
+      <!-- <i class="uil uil-book-alt"></i> -->
+      <img class="icon-card" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-plain.svg"
+        alt="">
+    </div>
+    <div class="title-card">
+      <h3>PROYECTOS EN ASTRO</h3>
+    </div>
+  </div>
+
+  <div class="wrapper-text">
+    <div class="descript-project">
+      <p style="text-align: center;">
+        Próximamente
+      </p>
+    </div>
+    <div class="arrow-icon">
+      <i class="uil uil-arrow-right"></i>
+    </div>
+  </div>
+</div>
+
 </div>
