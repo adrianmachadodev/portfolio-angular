@@ -43,6 +43,7 @@ img{
   font-family: "Integral";
   color: white;
   line-height: 1.5rem;
+  
 }
 
 .cards-projects{
@@ -77,6 +78,8 @@ img{
 .cards-projects .title-card{
   font-family: "Integral";
   color: white;
+  font-weight: 400;
+
 }
 
 .cards-projects .text-description{

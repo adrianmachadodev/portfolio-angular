@@ -51,6 +51,8 @@ img {
   font-size: 20px;
   text-align: center;
   color: white;
+  font-family: 'integral';
+  font-weight: 400;
 }
 
 .techs {
@@ -72,18 +74,18 @@ img {
 }
 
 .techs .pill-tech {
-  background-color: rgba(59, 59, 59, 0.178);
+  /* background-color: rgba(59, 59, 59, 0.178); */
   width: 75px;
   height: 2rem;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   line-height: 2rem;
-  color: rgb(100, 100, 100);
   font-family: "Inter thin", Arial, sans-serif;
   font-size: 11px;
   color: rgb(148 163 184);
   font-weight: bold;
   padding: 3px;
+  border:1px solid rgb(37, 37, 37)
 }
 
 .info-experience {
@@ -142,6 +144,7 @@ img {
 }
 .header-initial .header-style {
   font-family: "Integral";
+  font-weight: 400;
   color: white;
 }
 
