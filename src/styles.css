@@ -60,3 +60,20 @@ a:hover,
 a:link {
   color: black;
 }
+
+.splash-img{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.splash-img img {
+  width: 200px; 
+  animation: fadeIn 1s ease-in-out;
+}
