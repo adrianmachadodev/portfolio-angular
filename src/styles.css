@@ -74,6 +74,11 @@ a:link {
 }
 
 .splash-img img {
-  width: 200px; 
+  width: 150px; 
   animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
