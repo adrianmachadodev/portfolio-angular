@@ -11,7 +11,3 @@ This portfolio was created with the Angular framework, I show my experience, tec
 I used reusables components, path and others functions.
 
 Portfolio 2025 by Adrián Machado
-
-Faltantes: 
-. cards de proyectos personales y ruta nueva a proyectos de astro.
-. agregar las metatags para colocar las imagenes de las urls.
