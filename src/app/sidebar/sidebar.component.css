@@ -13,7 +13,7 @@ img {
 
 .contain-logo {
   /* background-color: brown; */
-  width: 40rem;
+  width: 100%;
   height: 5rem;
   display: flex;
   flex-direction: row;
