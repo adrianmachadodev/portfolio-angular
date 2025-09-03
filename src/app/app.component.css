@@ -1,5 +1,5 @@
 .wrapper {
-  height: calc(100vh);
+  height: 100vh;
 
   position: relative;
   background-color:hsl(0, 0%, 5%);
