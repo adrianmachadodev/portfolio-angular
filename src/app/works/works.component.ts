@@ -112,7 +112,7 @@ export class WorksComponent implements OnInit {
       ],
     },
     {
-      thumbnail: `../../assets/images/form-validator2.jpg`,
+      thumbnail: `../../assets/images/banner-project-astro-rickandmorty.jpg`,
       title: 'Form Validator',
       descrip:
         'Este es un formulario construido con los componentes de bootstrap. Este pequeño proyecto no está terminado completamente. Es una práctica en donde utilice progressive web apps (PWA) de Angular.',
@@ -142,16 +142,17 @@ export class WorksComponent implements OnInit {
 
   arrayAstro: LinkModel[] = [
     {
-      thumbnail: `../../assets/images/yanina.jpg`,
-      title: 'Rick And Morty - Astro',
+      thumbnail: `../../assets/images/banner-project-astro-rickandmorty.jpg`,
+      title: 'Rick And Morty Astro',
       descrip:
-        'Mi comienzo en el desarrollo web, fue con una página web para un lugar de comidas, en la que solamente se mostraban los productos, junto a sus gustos, y variedades. Toda la información que se renderizaba era de forma estática. (2018)',
+        'Sitio web moderno y optimizado, construido con Astro para aprovechar su rendimiento y generación estática, garantizando tiempos de carga muy rápidos y excelente SEO. Se utilizó TailwindCSS para implementar un diseño responsive y escalable, con componentes reutilizables y un estilo visual consistente. El proyecto incluyó integración de secciones dinámicas, optimización de imágenes y buenas prácticas de accesibilidad, logrando una experiencia de usuario fluida tanto en dispositivos móviles como en desktop.',
+      link: 'https://rick-and-morty-astro-seven.vercel.app/',
       icon_tech: [
         {
-          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg`,
+          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg`,
         },
         {
-          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg`,
+          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg`,
         },
       ],
     },
@@ -174,6 +175,6 @@ class LinkModel {
   title: string;
   descrip: string;
   link?: string;
-  type?:string;
+  type?: string;
   icon_tech: any[];
 }

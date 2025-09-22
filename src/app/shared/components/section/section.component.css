@@ -11,7 +11,7 @@ li{
     width: 100%;
     min-height: 10rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
