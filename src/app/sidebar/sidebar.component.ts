@@ -55,6 +55,9 @@ export class SidebarComponent implements OnInit, AfterViewInit {
     {
       name: "#Tailwind"
     },
+    {
+      name: "#Figma"
+    },
     
   ]
 

@@ -156,6 +156,24 @@ export class WorksComponent implements OnInit {
         },
       ],
     },
+    {
+      thumbnail: `../../assets/images/banner-project-astro-rickandmorty.jpg`,
+      title: 'Mab Bakery astro',
+      descrip:
+        'Desarrollo de un sitio web moderno y visualmente atractivo para una panadería artesanal. El proyecto fue creado con Astro, aprovechando su enfoque de renderizado estático para optimizar la velocidad de carga y el rendimiento SEO. El diseño se implementó utilizando TailwindCSS, logrando una interfaz limpia, responsive y con una estética cálida que refleja la identidad de la marca.',
+      link: 'https://mabsabores.vercel.app/',
+      icon_tech: [
+        {
+          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg`,
+        },
+        {
+          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg`,
+        },
+        {
+          icon: `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-plain.svg`,
+        },
+      ],
+    },
   ];
 
   constructor(private router: Router, private route: ActivatedRoute) {
