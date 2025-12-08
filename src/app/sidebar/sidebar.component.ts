@@ -31,6 +31,11 @@ export class SidebarComponent implements OnInit, AfterViewInit {
       message: '¡No dudes en enviarme un correo! 🔔',
       icon: 'uil uil-envelope',
     },
+    {
+      link: 'https://www.instagram.com/adrian.webnfx/',
+      message: '¡Puedes ver mi contenido en Instagram!',
+      icon: 'uil uil-instagram',
+    },
   ];
 
   pills:Array<TechPill> = [

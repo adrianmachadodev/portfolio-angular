@@ -157,7 +157,7 @@ export class WorksComponent implements OnInit {
       ],
     },
     {
-      thumbnail: `../../assets/images/banner-project-astro-rickandmorty.jpg`,
+      thumbnail: `../../assets/images/mabsabores.jpg`,
       title: 'Mab Bakery astro',
       descrip:
         'Desarrollo de un sitio web moderno y visualmente atractivo para una panadería artesanal. El proyecto fue creado con Astro, aprovechando su enfoque de renderizado estático para optimizar la velocidad de carga y el rendimiento SEO. El diseño se implementó utilizando TailwindCSS, logrando una interfaz limpia, responsive y con una estética cálida que refleja la identidad de la marca.',
